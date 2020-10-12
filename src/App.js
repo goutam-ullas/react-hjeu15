@@ -795,19 +795,6 @@ class Application extends React.Component {
           volume={0.05}
           muted={this.state.page1mute}
         />
-        {/*Page 1 Description*/}
-        <div
-          style={{
-            position: "fixed",
-            width: 0.3 * this.state.mapWidth,
-            left: 65,
-            top: 0.2 * this.state.mapHeight,
-            visibility: this.state.page1Vis,
-            zIndex: 1
-          }}
-        >
-          <text className="themeDesc">{this.theme0Desc}</text>
-        </div>
         {/*Page 1 Mute Control*/}
         <span
           role="button"
@@ -878,63 +865,6 @@ class Application extends React.Component {
             controls={true}
           />
         </div>
-
-        {/*Page 3: Theme 2
-        <div
-          style={{
-            position: "fixed",
-            pointerEvents: "none",
-            top: 0,
-            left: 0,
-            height: window.innerHeight,
-            width: window.innerWidth,
-            visibility: this.state.page3Vis,
-            backgroundColor: "transparent"
-          }}
-        >*/}
-        {/*Theme 2 - Background image
-          <img
-            style={{
-              position: "fixed",
-              backgroundColor: "transparent",
-              bottom: 0,
-              left: -10,
-              width: 1.02 * this.state.mapWidth,
-              zIndex: 1
-            }}
-            src={this.theme2Img}
-          />*/}
-        {/*Theme 2 Description
-          <div
-            style={{
-              padding: 20,
-              position: "fixed",
-              zIndex: 5,
-              width: "40%",
-              bottom: this.state.mapHeight / 10,
-              left: this.state.themeVidRight,
-              transition: "width 1s, bottom 1s, left 1s"
-            }}
-          >
-            <text className="themeDesc">{this.theme2Desc}</text>
-          </div>*/}
-        {/*Theme 2 Video
-          <ReactPlayer
-            className="video"
-            style={{
-              bottom: this.state.mapHeight / 4,
-              zIndex: this.state.videoZindex3,
-              left: this.state.themeVidRight - 20,
-              transition: "left 1s"
-            }}
-            height={this.state.videoHeight}
-            width={this.state.videoWidth}
-            url={this.theme2Video}
-            controls={true}
-            onPlay={() => this.setState({ videoZindex3: 10 })}
-            onPause={() => this.setState({ videoZindex3: 0 })}
-          />
-        </div>*/}
 
         {/*Page 4: Theme 3*/}
         <div
